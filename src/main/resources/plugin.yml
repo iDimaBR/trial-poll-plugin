@@ -1,0 +1,19 @@
+name: TrialPoll
+version: '${project.version}'
+main: com.github.idimabr.TrialPoll
+api-version: '1.21'
+commands:
+  createpoll:
+  poll:
+
+permissions:
+  trialpoll.use:
+    default: true
+  trialpoll.create:
+    default: op
+  trialpoll.results:
+    default: op
+  trialpoll.close:
+    default: op
+  trialpoll.remove:
+    default: op

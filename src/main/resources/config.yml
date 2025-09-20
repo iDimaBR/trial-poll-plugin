@@ -1,0 +1,84 @@
+Database:
+  type: "sqlite" # "sqlite" or "mysql"
+  sqlite:
+    fileName: "database.db"
+  mysql:
+    address: "localhost:3306"
+    username: "root"
+    password: ""
+    database: "trialpoll"
+
+# update interval in seconds
+interval-poll: 5
+
+# config for navigation options
+navigation:
+  back:
+    slot: 0
+    material: ARROW
+    name: "&fBack"
+    lore:
+      - "&7Click to go back"
+  next:
+    slot: 8
+    material: ARROW
+    name: "&fNext"
+    lore:
+      - "&7Click to go to the next page"
+  empty:
+    slot: 22
+    material: COBWEB
+    name: "&cEmpty"
+
+# config for menus
+menus:
+  poll:
+    title: "&8&nPolls"
+    row: 5
+    item-format:
+      material: "PAPER"
+      name: "&ePoll #{id}"
+      lore:
+        - "&7Question: &f{question}"
+        - "&7Total Votes: &f{total_votes}"
+        - "&7Expires: &f{expires}"
+        - ""
+        - "&eClick to view options"
+  results:
+    title: "&8&nPoll Results"
+    row: 5
+    item-format:
+      material: "PAPER"
+      name: "&eResults Poll #{id}"
+      lore:
+        - "&7Question: &f{question}"
+        - "&7Created: &f{created}"
+        - "&7Winner: &f{winner}"
+        - ""
+        - "&7Options:"
+        - "{option_1}"
+        - "{option_2}"
+        - "{option_3}"
+        - "{option_4}"
+        - "{option_5}"
+        - "{option_6}"
+  options:
+    title: "&8&nVoting on Poll"
+    row: 3
+    slots: [12,13,14,15,16,17]
+    items:
+      option:
+        material: "PAPER"
+        name: "&e{option}"
+        lore:
+          - "&7Votes: &f{votes}"
+          - ""
+          - "&eClick to vote for this option"
+      question:
+        slot: 10
+        material: "REDSTONE_TORCH"
+        name: "&eQuestion"
+        lore:
+          - "&7Total Votes: &f{total_votes}"
+          - "&7Question: &f"
+          - "&f{question}"

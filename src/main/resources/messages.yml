@@ -1,0 +1,39 @@
+only-players: "&cOnly players can use this command."
+no-permission: "&cYou don't have permission to use this command."
+
+invalid-duration: "&cInvalid duration. Examples: 10s, 5m, 1h, 2d, 1d2h"
+invalid-question: "&cInvalid question. You need to provide a question for the poll."
+poll-created: "&aPoll created successfully."
+poll-cancelled: "&cPoll creation canceled, not enough options. (Minimum 2 options required)"
+options-prompt:
+  - "&7Please enter the options for the poll."
+  - "&7Type '&adone&7' when &nfinished&r&7 or '&cexit&7' to &ncancel&r&7. "
+  - ""
+  - "&eCurrent options:"
+  - "&f{options}"
+
+invalid-poll: "&cInvalid poll ID."
+not-found-poll: "&cPoll with ID &e{id} &cnot found."
+poll-closed: "&aPoll #{id} &ahas been closed."
+poll-removed: "&aPoll #{id} &ahas been removed."
+
+already-expired: "&cThis poll has already expired."
+already-vote: "&cYou have already voted in this poll. (option: &e'{option}'&c)"
+vote-recorded: "&aYour vote for option &e'{option}' &ahas been recorded. (total votes: &f{votes}&a)"
+
+finished-poll:
+  - "&6&lPoll Finished!"
+  - "&eQuestion: &f{question}"
+  - "&eWinning Option: &f{winner} &ewith &f{votes} &evotes."
+  - "&eTotal Votes: &f{total_votes}"
+
+help:
+  - "&8&m---------------------"
+  - "&6&lPoll Plugin Help"
+  - "&8&m---------------------"
+  - "&e/createpoll <duration> <question> &7- Create a new poll."
+  - "&e/poll &7- View active polls."
+  - "&e/poll results <id> &7- View poll results."
+  - "&e/poll close <id> &7- Close an active poll."
+  - "&e/poll remove <id> &7- Remove a poll from the database."
+  - "&8&m---------------------"
